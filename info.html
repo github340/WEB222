@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Yebon Lee</title>
+</head>
+
+    <body id="information-body">
+        <header>
+            <h1>
+                Information
+            </h1>
+        </header>
+        <main>
+            <nav>
+                <ul>        
+                    <li>
+                        <a href="honesty.html">Welcome</a>                 
+                    </li>
+                    <li>
+                        <a href="info.html">Information</a>                
+                    </li>
+                    <li>
+                        <a href="reflection.html">Reflection</a>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <form method="post" onsubmit="return checkAll()" action="https://httpbin.org/post" name="signup">
+                    <h2>Signup</h2>
+                    <p>
+                        <label for="">First Name</label>
+                        <input type="text" pattern="[A-Z][a-z]*" required name="fname"/>
+                    </p>
+                    <p> 
+                        <label for="">Last Name</label>
+                        <input type="text" pattern="[A-Z][a-z]*" required name="lname"/>
+                    </p>
+                    <p> 
+                        <label for="">Password</label>
+                        <input type="password" minlength="6" maxlength="6" required name="password"/>
+                    </p>
+                    <p> 
+                        <label for="">Password Confirm</label>
+                        <input type="password" minlength="6" maxlength="6" required name="password2"/>
+                    </p>
+                    <p> 
+                        <label for="">Username</label>
+                        <input type="text" minlength="6" required name="username"/>
+                    </p>
+                    <p>
+                        <label for="">Education Level </label>
+                            <select name="edu_level" id="" required>
+                                <option value="0">- select -</option>
+                                <option value="1">Technical Diploma</option>
+                                <option value="2">College Diploma</option>
+                                <option value="3">Bachelor's Degree</option>
+                                <option value="4">Master's Degree</option>
+                                <option value="5">Others</option>
+                            </select>                                         
+                    </p>
+                    <p>
+                        <label for="">Education Status</label>
+                        <p>
+                            <p>
+                                <input type="radio" name="edu" id="edu_status_graduated" value="1"> 
+                                <label for="edu_status_graduated">
+                                    Graduated
+                                </label> 
+                            </p>
+                            <p>
+                                <input type="radio" name="edu" id="edu_status_current" value="2" required> 
+                                <label for="edu_status_current">
+                                    Current enrolled
+                                </label>
+                            </p>
+                            <p>
+                                <input type="radio" name="edu" id="edu_status_not_graduate" value="3" required> 
+                                <label for="edu_status_not_graduate">
+                                    Did not graduate
+                                </label>
+                            </p>
+                        </p>                 
+                    </p>
+                    <p>
+                        <label for="">Email</label>
+                        <input type="email" required name="email">
+                    </p>
+                    <p>
+                        <label for="">Age</label>
+                        <input type="number" min="18" max="60" required name="age">
+                    </p>
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+
+                    </p>
+
+                    <input type="hidden" name="lastName" id="lastName" value="Yebon Lee" />
+                    <input type="hidden" name="studentId" id="studentId" value="132747205" />
+                </form>
+            </section>
+            <aside id="side-panel">
+                Side Panel
+            </aside>
+        </main>
+
+        <footer>
+            Yebon Lee © 2021, All rights reserved.
+        </footer>
+        <script src="info.js"></script>
+    </body>
+
+</html>
